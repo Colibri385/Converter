@@ -1,1 +1,44 @@
-Bonjour
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convertisseur devise</title>
+</head>
+<body>
+    <h1>Taux de change</h1>
+
+        <table>
+            <tr>
+                <td><input onkeyup="recuperervaleur()" id="fromAmount" />
+                </td>
+                <td>
+                    <select name="" id="from" onchange="recuperervaleur()">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="KHR">RIEL</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                    <td><input disabled id="toAmount"/>
+                    </td>
+                    <td>
+                        <select name="" id="to" onchange="recuperervaleur()">
+                            <option value="EUR">USD</option>
+                            <option value="USD">USD</option>
+                            <option value="KHR">RIEL</option>
+                        </select>
+                    </td>
+    
+                </tr>
+        </table>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="script.js"></script>
+
+</body>
+</html>
